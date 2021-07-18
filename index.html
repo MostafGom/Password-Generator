@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+<!-- styles -->
+  <link rel="stylesheet" href="style.css">
+  <title>Password Generator</title>
+</head>
+<body>
+  
+  <div class="container">
+    <h1>Password Gen</h1>
+    <div class="header">
+      <input type="text" id="password">
+      <button class="copy" id="copy">Copy to clipboard</button>
+    </div>
+
+    <!-- Password properties -->
+
+    <div class="pass_choices">
+      <!-- Password length -->
+      <div class="pass_option">
+        <input type="number" id="pass_length" value="16" min="8" max="30">
+        <label for="pass_length">Password Length</label>
+      </div>
+      <!-- Upper case -->
+      <div class="pass_option">
+        <input type="checkbox" checked id="pass_upper">
+        <label for="pass_upper">Include UpperCase</label>
+      </div>
+      <!-- Lower case -->
+      <div class="pass_option">
+        <input type="checkbox" checked id="pass_lower">
+        <label for="pass_lower">Include LowerCase</label>
+      </div>
+      <!-- Numbers -->
+      <div class="pass_option">
+        <input type="checkbox" checked id="pass_number">
+        <label for="pass_number">Include Number</label>
+      </div>
+      <!-- Symbols -->
+      <div class="pass_option">
+        <input type="checkbox" checked id="pass_symbol">
+        <label for="pass_symbol">Include Symbols (e.g:@,#,$,...etc.)</label>
+      </div>
+      <button id="submit">Generate Password</button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
